@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Investimentos</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#0f0f0f;
+color:white;
+text-align:center;
+}
+
+h1{
+margin-top:40px;
+color:#00ff88;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:900px;
+margin:50px auto;
+padding:20px;
+}
+
+.card{
+background:#111;
+padding:30px;
+border-radius:15px;
+border:1px solid #00ff88;
+cursor:pointer;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px #00ff88;
+}
+
+.card h2{
+color:#00ff88;
+}
+
+.card p{
+color:#aaa;
+}
+
+.voltar{
+margin-top:20px;
+display:inline-block;
+color:#00ff88;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Área de Investimentos</h1>
+
+<p>Escolha um tipo de investimento para começar.</p>
+
+<div class="grid">
+
+<!-- CRIPTO -->
+<div class="card" onclick="irCrypto()">
+<h2>🪙 Criptomoedas</h2>
+<p>Aprenda a investir e lucrar com o mercado cripto.</p>
+</div>
+
+<!-- AÇÕES -->
+<div class="card" onclick="irAcoes()">
+<h2>📈 Ações</h2>
+<p>Aprenda a investir na bolsa e gerar renda.</p>
+</div>
+
+<!-- RENDA FIXA -->
+<div class="card" onclick="irRendaFixa()">
+<h2>💰 Renda fixa</h2>
+<p>Aprenda a investir com segurança.</p>
+</div>
+
+</div>
+
+<div class="voltar" onclick="voltar()">
+⬅ Voltar
+</div>
+
+<script>
+
+/* CRIPTO */
+function irCrypto(){
+document.body.innerHTML = `
+<div style="display:flex;justify-content:center;align-items:center;height:100vh;background:#0f0f0f;color:#00ff88;font-size:25px;">
+Processando acesso...
+</div>
+`
+setTimeout(()=>{
+window.location.href = "https://pay.kiwify.com.br/NIlXrDS"
+},2000)
+}
+
+/* AÇÕES */
+function irAcoes(){
+document.body.innerHTML = `
+<div style="display:flex;justify-content:center;align-items:center;height:100vh;background:#0f0f0f;color:#00ff88;font-size:25px;">
+Processando acesso...
+</div>
+`
+setTimeout(()=>{
+window.location.href = "https://pay.kiwify.com.br/nB7lelm"
+},2000)
+}
+
+/* RENDA FIXA */
+function irRendaFixa(){
+document.body.innerHTML = `
+<div style="display:flex;justify-content:center;align-items:center;height:100vh;background:#0f0f0f;color:#00ff88;font-size:25px;">
+Processando acesso...
+</div>
+`
+setTimeout(()=>{
+window.location.href = "https://pay.kiwify.com.br/uYc1HGC"
+},2000)
+}
+
+/* VOLTAR */
+function voltar(){
+window.history.back()
+}
+
+</script>
+
+</body>
+
+</html>

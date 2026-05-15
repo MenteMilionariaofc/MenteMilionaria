@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Criptomoedas</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#0f0f0f;
+color:white;
+text-align:center;
+}
+
+h1{
+margin-top:40px;
+color:#00ff88;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1000px;
+margin:50px auto;
+padding:20px;
+}
+
+.card{
+background:#111;
+padding:30px;
+border-radius:15px;
+border:1px solid #00ff88;
+cursor:pointer;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.08);
+box-shadow:0 0 20px #00ff88;
+}
+
+.card h2{
+color:#00ff88;
+}
+
+.card p{
+color:#aaa;
+}
+
+.voltar{
+margin-top:20px;
+display:inline-block;
+color:#00ff88;
+cursor:pointer;
+font-size:18px;
+margin-bottom:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>🪙 Cursos de Criptomoedas</h1>
+
+<p>
+Escolha um curso para começar no mercado cripto.
+</p>
+
+<div class="grid">
+
+<!-- CURSO 1 -->
+
+<div class="card" onclick="curso1()">
+
+<h2>🚀 Moedas lucrativas</h2>
+
+<p>
+Conheça criptomoedas com potencial de crescimento e oportunidades.
+</p>
+
+</div>
+
+<!-- CURSO 2 -->
+
+<div class="card" onclick="curso2()">
+
+<h2>💰 Como comprar sua primeira criptomoeda</h2>
+
+<p>
+Aprenda a comprar criptos da forma correta e segura.
+</p>
+
+</div>
+
+<!-- CURSO 3 -->
+
+<div class="card" onclick="curso3()">
+
+<h2>📈 Cripto-Masterclass</h2>
+
+<p>
+Descubra estratégias básicas para começar no mercado cripto.
+</p>
+
+</div>
+
+</div>
+
+<div class="voltar" onclick="voltar()">
+⬅ Voltar
+</div>
+
+<script>
+
+/* CURSOS */
+
+function curso1(){
+loading("https://pay.kiwify.com.br/YRJLaVo?afid=AhuHvvF6")
+}
+
+function curso2(){
+loading("https://pay.kiwify.com.br/cT8R1jT?afid=7v6sQ1Ms")
+}
+
+function curso3(){
+loading("https://pay.kiwify.com.br/P9ufyCY?afid=OGDbSdOG")
+}
+
+/* EFEITO DE CARREGAMENTO */
+
+function loading(link){
+
+document.body.innerHTML = `
+<div style="display:flex;justify-content:center;align-items:center;height:100vh;background:#0f0f0f;color:#00ff88;font-size:25px;">
+Acessando curso...
+</div>
+`
+
+setTimeout(()=>{
+window.location.href = link
+},2000)
+
+}
+
+/* VOLTAR */
+
+function voltar(){
+window.history.back()
+}
+
+</script>
+
+</body>
+
+</html>
